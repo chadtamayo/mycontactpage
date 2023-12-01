@@ -33,6 +33,7 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
+	overflow: hidden;
 	line-height: 1;
 }
 ol, ul {
@@ -69,20 +70,23 @@ html, body {
 }
 
 .center {
-    width: 800px;
+    width: 100%;
+	height: 100%;
 	padding: 2%;
-	margin-bottom: 99px;
+	margin-bottom: 0px;
     margin: 100px auto;
  	background: rgba(54, 54, 54, 0.853); /*this uses opacity of 75% for the background color*/
 	text-align: center;
-	border: 0px  white;
+	border-top: solid rgb(255, 255, 255);
+	border-bottom: solid rgb(255, 255, 255);
+	border-width: 3px
 	
 }
 
    
 #logo {
-    margin-top: 100px;
-	margin-bottom: 0px;
+    margin-top: 150px;
+	margin-bottom: 12px;
 	border: 0px dashed red;
 	text-align: center;
 }
@@ -116,12 +120,17 @@ p {
 nav{
 	font-family: 'Hedvig Letters Serif', serif;
 	font-size: 1.2em;
-	width: 400px;
+	width: 350px;
 	margin: 0 auto; 
-	border: dashed rgb(255, 255, 255);
+	background: rgba(54, 54, 54, 0.853);
+	border: solid rgb(255, 255, 255);
 	border-width: 3px 0;
+	border-left: solid rgb(255, 255, 255);
 	text-align: center;
 	margin-top: 2em; 
+	position: fixed;
+	top: 0;
+	right: 0;
 }
 
 nav li{
@@ -133,17 +142,18 @@ nav a{
 	padding: 10px;
 }
 /* This is where the code for link effects are (color and hover effects) */
+/* This hover effect was taken from https://css-tricks.com/css-link-hover-effects/ */
 a {
-    color: #00a2ff; /* Corrected color code with '#' */
-    text-decoration: none;
-    font-weight: bold;
-}
-
-a:hover {
-    color: rgb(255, 255, 255);
-    background: rgb(0, 0, 0); 
-
-}
-    
+	box-shadow: inset 0 0 0 0 #54b3d6;
+	color: #54b3d6;
+	margin: 0 -.25rem;
+	padding: 0 .25rem;
+	transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+  }
+  a:hover {
+	box-shadow: inset 100px 0 0 0 #54b3d6;
+	color: white;
+  }
+/* End of hover effect from https://css-tricks.com/css-link-hover-effects/ */
     
 
