@@ -33,7 +33,7 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
-	overflow: hidden;
+	overflow: auto;
 	line-height: 1;
 }
 ol, ul {
@@ -51,7 +51,9 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-
+* {
+    box-sizing: border-box;
+}
 
 
 /* ---------- This is the beginning of my 201 Contact Web Page Project ------------ */
@@ -61,7 +63,7 @@ html, body {
   width: 100%;
   padding: 0;
   margin-bottom: 100;
-  background-image: url("images/chadtamayo-bg.jpg");
+  background-image: url("images/aibackground-bg.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -71,21 +73,18 @@ html, body {
 
 .center {
     width: 100%;
-	height: 100%;
-	padding: 2%;
-	margin-bottom: 0px;
+    padding: 2%;
     margin: 100px auto;
- 	background: rgba(54, 54, 54, 0.853); /*this uses opacity of 75% for the background color*/
-	text-align: center;
-	border-top: solid rgb(255, 255, 255);
-	border-bottom: solid rgb(255, 255, 255);
-	border-width: 3px
-	
+    background: rgba(54, 54, 54, 0.853);
+    text-align: center;
+    border-top: solid rgb(255, 255, 255);
+    border-bottom: solid rgb(255, 255, 255);
+    border-width: 3px;
 }
 
    
 #logo {
-    margin-top: 150px;
+    margin-top: 200px;
 	margin-bottom: 12px;
 	border: 0px dashed red;
 	text-align: center;
@@ -93,7 +92,7 @@ html, body {
 
 h1 {
 	font-family: 'Ephesis', cursive;
-	font-size: 2em;
+	font-size: 3em;
     margin: 0px auto 10px auto;
     color: #fff;
 }
@@ -108,7 +107,7 @@ font-family: 'Shadows Into Light', cursive;
     line-height: 1.4;
     color: #fff;
     padding: 0px 0px;
-    margin: 0px auto 25px auto;
+	margin: 0 auto 25px auto;
 }
 
 p {
@@ -144,14 +143,14 @@ nav a{
 /* This is where the code for link effects are (color and hover effects) */
 /* This hover effect was taken from https://css-tricks.com/css-link-hover-effects/ */
 a {
-	box-shadow: inset 0 0 0 0 #54b3d6;
-	color: #54b3d6;
+	box-shadow: inset 0 0 0 0 #968d43;
+	color: #968d43;
 	margin: 0 -.25rem;
 	padding: 0 .25rem;
 	transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
   }
   a:hover {
-	box-shadow: inset 100px 0 0 0 #54b3d6;
+	box-shadow: inset 100px 0 0 0 #968d43;
 	color: white;
   }
 /* End of hover effect from https://css-tricks.com/css-link-hover-effects/ */
